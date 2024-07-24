@@ -24,18 +24,19 @@ public class FouladiActivity10 extends AppCompatActivity implements NavigationBa
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_main);
+
         bottomNavigationView = findViewById(R.id.MoebottomNavigationView);
 
         moe = new Mo1e();
         fouladi = new Fou1adi();
         loadFragment(moe);
 
-        setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+//            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+//            return insets;
+//        });
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -43,12 +44,12 @@ public class FouladiActivity10 extends AppCompatActivity implements NavigationBa
                 if (item.getItemId() == R.id.Mo1e) {
                     selectedFragment = moe;
                 } else if (item.getItemId() == R.id.Fou1adi) {
-                    selectedFragment = fouladi;
-//                } else if (item.getItemId() == R.id.Moesettings) {
+                    selectedFragment = fouladi;}
+//                else if (item.getItemId() == R.id.Moesettings) {
 //                    selectedFragment = settingsFragment;
 //                } else if (item.getItemId() == R.id.Moe) {
 //                    selectedFragment = moeFragment;
-               }
+
 
                 if(selectedFragment!=null)
                 {   loadFragment(selectedFragment);}
