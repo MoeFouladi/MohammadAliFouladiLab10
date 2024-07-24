@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Mo1e"
+        android:title="@string/moe"
+        android:icon="@drawable/mo1e_foreground"
+        android:orderInCategory="1"/>
+    <item
+        android:id="@+id/Fou1adi"
+        android:title="@string/fouladi"
+        android:icon="@drawable/fouladi"
+        android:orderInCategory="2"/>
+    <item
+        android:id="@+id/N015437173"
+        android:title="@string/n01547173"
+        android:icon="@drawable/n01547173"
+        android:orderInCategory="3"/>
+
+</menu>
+    <!--MohammadAliFouldi N01547173-->
