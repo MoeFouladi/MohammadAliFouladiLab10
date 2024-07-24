@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">MohammadAliLab10</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="designed_by_mohammadali_fouladi_n01547173">Designed by MohammadAli Fouladi N01547173©</string>
 </resources>
