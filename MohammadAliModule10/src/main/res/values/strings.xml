@@ -8,4 +8,9 @@
     <string name="n01547173">N01547173</string>
     <string name="Fullnameid">MohammadAli Fouladi N01547173</string>
     <string name="download_image">Download image</string>
+    <string name="celsius">Celsius</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="error_fetching_weather_data">Error fetching weather data</string>
+    <string name="http_status_code">"HTTP status code: "</string>
 </resources>
+    <!-- MohammadAli Fouladi N01547173-->

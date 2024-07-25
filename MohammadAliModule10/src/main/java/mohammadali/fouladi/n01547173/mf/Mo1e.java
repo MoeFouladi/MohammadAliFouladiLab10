@@ -2,6 +2,7 @@ package mohammadali.fouladi.n01547173.mf;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -36,7 +37,7 @@ public class Mo1e extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
+//MohammadAli Fouladi N01547173
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
@@ -44,8 +45,9 @@ public class Mo1e extends Fragment {
     private Button downloadButton;
     private ProgressBar progressBar;
     private ImageView imageView;
-    private String[] imageNames = {"Tiger", "Mountain", "Ocean", "Desert"};
+    private String[] imageNames = {"Select Image","Tiger", "Mountain", "Ocean", "Desert"};
     private String[] imageUrls = {
+            "",
             "https://h5p.org/sites/default/files/h5p/content/1209180/images/file-6113d5f8845dc.jpeg",
             "https://media.cnn.com/api/v1/images/stellar/prod/230908155626-05-mount-fuji-overtourism.jpg",
             "https://thedaily.case.edu/wp-content/uploads/2023/06/underwater-view-768x329.jpg",
@@ -97,6 +99,7 @@ public class Mo1e extends Fragment {
         downloadButton = view.findViewById(R.id.Mo1ebutton);
         progressBar = view.findViewById(R.id.Mo1eprogressBar);
         imageView = view.findViewById(R.id.Mo1eimageView);
+        imageView.setImageResource(R.drawable.demon);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_spinner_item, imageNames);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

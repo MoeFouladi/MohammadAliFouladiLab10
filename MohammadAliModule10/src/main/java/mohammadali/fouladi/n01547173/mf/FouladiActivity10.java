@@ -31,7 +31,7 @@ public class FouladiActivity10 extends AppCompatActivity implements NavigationBa
         moe = new Mo1e();
         fouladi = new Fou1adi();
         loadFragment(moe);
-
+// MohammadAli Fouladi N01547173
 //        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
 //            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
 //            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

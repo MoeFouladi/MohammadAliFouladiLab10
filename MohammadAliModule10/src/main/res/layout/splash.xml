@@ -17,6 +17,7 @@
         android:src="@drawable/launcher"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <!-- MohammadAli Fouladi N01547173-->
 
     <TextView
         android:id="@+id/MoeSplashtextView"
@@ -32,10 +33,10 @@
 
     <TextView
         android:id="@+id/MoeSplashtextView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="620dp"
+        android:layout_width="353dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="596dp"
         android:text="@string/designed_by_mohammadali_fouladi_n01547173"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
