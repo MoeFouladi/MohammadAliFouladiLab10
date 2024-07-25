@@ -1,17 +1,18 @@
 <resources>
     <string name="app_name">MohammadAliLab10</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="designed_by_mohammadali_fouladi_n01547173">Designed by MohammadAli Fouladi N01547173©</string>
+    <string name="hello_blank_fragment">Bonjour fragment vide</string>
+    <string name="designed_by_mohammadali_fouladi_n01547173">Conçu par MohammadAli Fouladi N01547173©</string>
     <string name="moe">Moe</string>
     <string name="fouladi">Fouladi</string>
     <string name="n01547173">N01547173</string>
     <string name="Fullnameid">MohammadAli Fouladi N01547173</string>
-    <string name="download_image">Download image</string>
+    <string name="download_image">Télécharger limage</string>
     <string name="celsius">Celsius</string>
     <string name="fahrenheit">Fahrenheit</string>
-    <string name="error_fetching_weather_data">Error fetching weather data</string>
-    <string name="http_status_code">"HTTP status code: "</string>
+    <string name="error_fetching_weather_data">Erreur lors de la récupération des données météorologiques</string>
+    <string name="http_status_code">"Code d'état HTTP : "</string>
 </resources>
+
     <!-- MohammadAli Fouladi N01547173-->
     <!-- before french -->
