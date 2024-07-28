@@ -27,6 +27,7 @@
     <string name="please_select_an_image">Please select an image</string>
     <string name="location_not_determined">Location not determined</string>
     <string name="error_retrieving_location">Error retrieving location</string>
+    <string name="ApiKey">e70ed408515f27caf8a23869a2a1b6de</string>
 
     <string-array name="Moevideo_descriptions">
         <item>Pewdieoie</item>

@@ -141,7 +141,7 @@ public class Fou1adi extends Fragment {
     private void fetchWeatherData(int position) {
         double lat = lats[position];
         double lon = lons[position];
-        String apiKey = "e70ed408515f27caf8a23869a2a1b6de";
+        String apiKey = getString(R.string.ApiKey);
         //No calculation for unit needed here haha, the &units will do the job
         String urlString = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=" + selectedUnit + "&appid=" + apiKey;
 
