@@ -14,6 +14,7 @@
     <string name="http_status_code">"HTTP status code: "</string>
     <string name="video_description">Video Description</string>
     <string name="m4f">M4F</string>
+    <string name="mohammadali_fouladi">MohammadAli Fouladi</string>
 
     <string-array name="Moevideo_descriptions">
         <item>Pewdieoie</item>

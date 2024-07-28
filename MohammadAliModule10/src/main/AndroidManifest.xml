@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
 
 
     <application
@@ -33,9 +36,10 @@
 
 
             <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
+                android:name="com.google.android.gms.ads.APPLICATION_ID"
+                android:value="ca-app-pub-8318544790581778~3073656099"/>
+
         </activity>
-    </application>>
+    </application>
 
 </manifest>
