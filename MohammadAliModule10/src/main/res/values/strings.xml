@@ -12,6 +12,7 @@
     <string name="fahrenheit">Fahrenheit</string>
     <string name="error_fetching_weather_data">Error fetching weather data</string>
     <string name="http_status_code">"HTTP status code: "</string>
+    <string name="video_description">Video Description</string>
 
     <string-array name="Moevideo_descriptions">
         <item>Pewdieoie</item>

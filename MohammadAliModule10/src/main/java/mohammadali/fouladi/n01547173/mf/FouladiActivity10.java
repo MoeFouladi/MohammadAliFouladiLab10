@@ -32,6 +32,7 @@ public class FouladiActivity10 extends AppCompatActivity implements NavigationBa
 
         moe = new Mo1e();
         fouladi = new Fou1adi();
+        thirdFragment = new N01547173();
         loadFragment(moe);
 // MohammadAli Fouladi N01547173
 //        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -48,8 +49,7 @@ public class FouladiActivity10 extends AppCompatActivity implements NavigationBa
                 } else if (item.getItemId() == R.id.Fou1adi) {
                     selectedFragment = fouladi;}
                    else if (item.getItemId() == R.id.N015437173) {
-                    selectedFragment = thirdFragment;
-            }
+                    selectedFragment = thirdFragment;}
 //                else if (item.getItemId() == R.id.Moe) {
 //                    selectedFragment = moeFragment;
 

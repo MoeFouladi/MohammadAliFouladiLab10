@@ -9,11 +9,11 @@
         android:id="@+id/MoeIdFragTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your Name and student id"
-        android:textColor="@color/red"
-        android:textSize="18sp"
         android:layout_gravity="center_horizontal"
-        android:paddingBottom="16dp" />
+        android:paddingTop="80dp"
+        android:text="@string/Fullnameid"
+        android:textColor="@color/red"
+        android:textSize="18sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/MoevideoRView"

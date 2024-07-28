@@ -25,7 +25,7 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHol
     @NonNull
     @Override
     public VideoViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(android.R.layout.simple_list_item_1, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.video_item, parent, false);
         return new VideoViewHolder(view);
     }
 
@@ -43,15 +43,16 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHol
 
         private TextView textView;
         private ImageView imageView;
+
         public VideoViewHolder(@NonNull View itemView) {
             super(itemView);
-            textView = itemView.findViewById(android.R.id.text1);
-            imageView= itemView.findViewById(android.R.id.icon);
+            textView = itemView.findViewById(R.id.videoDescription  );
+            imageView = itemView.findViewById(R.id.videoIcon);
         }
 
         public void bind(String description, String videoUrl) {
             textView.setText(description);
-            imageView.setImageResource(R.drawable.demon);
+            imageView.setImageResource(R.drawable.videoicon);
             itemView.setOnClickListener(v -> videoWebView.loadUrl(videoUrl));
         }
     }
