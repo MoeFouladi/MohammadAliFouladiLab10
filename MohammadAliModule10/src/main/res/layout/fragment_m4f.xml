@@ -1,4 +1,4 @@
-    <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:ads="http://schemas.android.com/apk/res-auto"
 
@@ -7,45 +7,48 @@
         android:padding="16dp"
         android:background="@android:color/darker_gray">
 
-        <TextClock
-            android:id="@+id/textClockDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
-            android:format12Hour="yyyy-MM-dd"
-            android:textColor="@android:color/holo_red_dark"
-            android:textSize="20sp" />
+    <TextClock
+        android:id="@+id/textClockDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="59dp"
 
-        <TextClock
-            android:id="@+id/textClockTime"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/textClockDate"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"
-            android:format12Hour="hh:mm:ss a"
-            android:textColor="@android:color/holo_red_dark"
-            android:textSize="20sp" />
+        android:layout_marginTop="66dp"
 
-        <Button
-            android:id="@+id/buttonLocation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/textClockTime"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="32dp"
-            android:background="@android:color/holo_purple"
-            android:text="Location"
-            android:textColor="@android:color/white" />
+        android:format12Hour="yyyy-MM-dd"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp" />
 
-        <com.google.android.gms.ads.AdView
-            android:id="@+id/adView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="382dp"
-            ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-8318544790581778/5745250570" />
+    <TextClock
+        android:id="@+id/textClockTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textClockDate"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-27dp"
+        android:layout_marginEnd="70dp"
+        android:format12Hour="hh:mm:ss a"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp" />
 
-    </RelativeLayout>
+    <Button
+        android:id="@+id/buttonLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textClockTime"
+        android:layout_marginTop="187dp"
+        android:layout_marginStart="150dp"
+        android:background="@android:color/holo_purple"
+        android:text="@string/location"
+        android:textColor="@android:color/white" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="266dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+</RelativeLayout>

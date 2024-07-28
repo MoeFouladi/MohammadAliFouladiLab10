@@ -17,6 +17,7 @@
     <string name="mohammadali_fouladi">MohammadAli Fouladi</string>
     <string name="location_notifications">Location Notifications</string>
     <string name="notifications_for_location_updates">Notifications for location updates</string>
+    <string name="location">Location</string>
 
     <string-array name="Moevideo_descriptions">
         <item>Pewdieoie</item>

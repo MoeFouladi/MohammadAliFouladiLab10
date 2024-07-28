@@ -31,6 +31,7 @@ import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.RequestConfiguration;
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -89,6 +90,20 @@ public class M4f extends Fragment {
             public void onAdClicked() {
                 adClickCounter++;
                 Toast.makeText(getContext(), getString(R.string.mohammadali_fouladi) + adClickCounter, Toast.LENGTH_LONG).show();
+            }
+            @Override
+            public void onAdFailedToLoad(@NonNull LoadAdError adError) {
+                Toast.makeText(getContext(), "Ad failed to load: " + adError.getMessage(), Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onAdLoaded() {
+                Toast.makeText(getContext(), "Ad loaded successfully", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onAdImpression() {
+                Toast.makeText(getContext(), "Ad impression recorded", Toast.LENGTH_SHORT).show();
             }
         });
 
