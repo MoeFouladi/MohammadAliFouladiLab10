@@ -15,6 +15,8 @@
     <string name="video_description">Video Description</string>
     <string name="m4f">M4F</string>
     <string name="mohammadali_fouladi">MohammadAli Fouladi</string>
+    <string name="location_notifications">Location Notifications</string>
+    <string name="notifications_for_location_updates">Notifications for location updates</string>
 
     <string-array name="Moevideo_descriptions">
         <item>Pewdieoie</item>

@@ -10,8 +10,8 @@
 
     <FrameLayout
         android:id="@+id/MoeflFragment"
-        android:layout_width="409dp"
-        android:layout_height="616dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toTopOf="@+id/MoebottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -21,8 +21,8 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/MoebottomNavigationView"
-        android:layout_width="403dp"
-        android:layout_height="113dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
         android:theme="@style/Theme.MyTheme"
         app:layout_constraintBottom_toBottomOf="parent"
