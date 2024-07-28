@@ -20,6 +20,8 @@ public class FouladiActivity10 extends AppCompatActivity implements NavigationBa
     private BottomNavigationView bottomNavigationView;
     private Mo1e moe;
     private Fou1adi fouladi;
+    private N01547173 thirdFragment;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,9 +47,10 @@ public class FouladiActivity10 extends AppCompatActivity implements NavigationBa
                     selectedFragment = moe;
                 } else if (item.getItemId() == R.id.Fou1adi) {
                     selectedFragment = fouladi;}
-//                else if (item.getItemId() == R.id.Moesettings) {
-//                    selectedFragment = settingsFragment;
-//                } else if (item.getItemId() == R.id.Moe) {
+                   else if (item.getItemId() == R.id.N015437173) {
+                    selectedFragment = thirdFragment;
+            }
+//                else if (item.getItemId() == R.id.Moe) {
 //                    selectedFragment = moeFragment;
 
 

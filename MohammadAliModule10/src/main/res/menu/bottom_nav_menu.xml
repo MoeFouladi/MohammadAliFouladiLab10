@@ -10,11 +10,11 @@
         android:title="@string/fouladi"
         android:icon="@drawable/fouladi"
         android:orderInCategory="2"/>
-   <!-- <item
+    <item
         android:id="@+id/N015437173"
         android:title="@string/n01547173"
         android:icon="@drawable/n01547173"
         android:orderInCategory="3"/>
--->
+
 </menu>
     <!--MohammadAliFouldi N01547173-->
