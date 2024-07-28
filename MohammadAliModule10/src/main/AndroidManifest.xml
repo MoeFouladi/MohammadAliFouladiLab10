@@ -35,11 +35,12 @@
             android:exported="true">
 
 
-            <meta-data
-                android:name="com.google.android.gms.ads.APPLICATION_ID"
-                android:value="ca-app-pub-8318544790581778~3073656099"/>
 
         </activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8318544790581778~3073656099"/>
+
     </application>
 
 </manifest>
