@@ -21,6 +21,7 @@ public class FouladiActivity10 extends AppCompatActivity implements NavigationBa
     private Mo1e moe;
     private Fou1adi fouladi;
     private N01547173 thirdFragment;
+    private M4f fourthFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,7 @@ public class FouladiActivity10 extends AppCompatActivity implements NavigationBa
         moe = new Mo1e();
         fouladi = new Fou1adi();
         thirdFragment = new N01547173();
+        fourthFragment = new M4f();
         loadFragment(moe);
 // MohammadAli Fouladi N01547173
 //        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -50,8 +52,8 @@ public class FouladiActivity10 extends AppCompatActivity implements NavigationBa
                     selectedFragment = fouladi;}
                    else if (item.getItemId() == R.id.N015437173) {
                     selectedFragment = thirdFragment;}
-//                else if (item.getItemId() == R.id.Moe) {
-//                    selectedFragment = moeFragment;
+                else if (item.getItemId() == R.id.FourthFragment) {
+                    selectedFragment = fourthFragment;}
 
 
                 if(selectedFragment!=null)

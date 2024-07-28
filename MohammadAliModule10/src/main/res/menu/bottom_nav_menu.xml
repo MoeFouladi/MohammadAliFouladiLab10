@@ -15,6 +15,10 @@
         android:title="@string/n01547173"
         android:icon="@drawable/n01547173"
         android:orderInCategory="3"/>
-
+<item
+    android:id="@+id/FourthFragment"
+    android:title="@string/m4f"
+    android:icon="@drawable/m4f"
+    android:orderInCategory="4"/>
 </menu>
     <!--MohammadAliFouldi N01547173-->
