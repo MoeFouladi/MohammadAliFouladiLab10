@@ -140,7 +140,7 @@ public class Mo1e extends Fragment {
                     }
                 });
             } else {
-                Toast.makeText(getContext(), "Please select an image", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), R.string.please_select_an_image, Toast.LENGTH_SHORT).show();
             }
         });
 

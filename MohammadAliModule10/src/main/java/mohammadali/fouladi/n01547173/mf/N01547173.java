@@ -12,14 +12,14 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
-
+// MohammadAli Fouladi N01547173
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link N01547173#newInstance} factory method to
  * create an instance of this fragment.
  */
 public class N01547173 extends Fragment {
-
+    //MohammadAli Fouladi N01547173
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";

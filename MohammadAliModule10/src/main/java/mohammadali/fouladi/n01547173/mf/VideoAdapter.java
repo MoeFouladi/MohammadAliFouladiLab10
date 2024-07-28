@@ -11,7 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHolder> {
-
+//
+    //MohammadAli Fouladi N01547173
     private String[] videoDescriptions;
     private String[] videoUrls;
     private WebView videoWebView;

@@ -12,6 +12,21 @@
     <string name="fahrenheit">Fahrenheit</string>
     <string name="error_fetching_weather_data">Erreur lors de la récupération des données météorologiques</string>
     <string name="http_status_code">"Code d'état HTTP : "</string>
+    <string name="video_description">Description de la vidéo</string>
+    <string name="m4f">M4F</string>
+    <string name="mohammadali_fouladi">MohammadAli Fouladi</string>
+    <string name="location_notifications">Notifications de localisation</string>
+    <string name="notifications_for_location_updates">Notifications pour les mises à jour de localisation</string>
+    <string name="location">Localisation</string>
+    <string name="latitude">Latitude : </string>
+    <string name="longitude">, Longitude : </string>
+    <string name="dismiss">IGNORER</string>
+    <string name="settings">PARAMÈTRES</string>
+    <string name="permission_denied_enable_it_from_settings">Permission refusée. Activez-la dans les paramètres.</string>
+    <string name="location_determined">Localisation déterminée</string>
+    <string name="please_select_an_image">Veuillez sélectionner une image</string>
+    <string name="location_not_determined">Location not determined</string>
+    <string name="error_retrieving_location">Error retrieving location</string>
 </resources>
 
     <!-- MohammadAli Fouladi N01547173-->

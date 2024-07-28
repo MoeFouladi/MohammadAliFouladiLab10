@@ -14,6 +14,7 @@
         android:text="@string/Fullnameid"
         android:textColor="@color/red"
         android:textSize="18sp" />
+    <!-- MohammadAli Fouladi N01547173-->
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/MoevideoRView"

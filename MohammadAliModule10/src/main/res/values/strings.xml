@@ -18,6 +18,15 @@
     <string name="location_notifications">Location Notifications</string>
     <string name="notifications_for_location_updates">Notifications for location updates</string>
     <string name="location">Location</string>
+    <string name="latitude">"Latitude: "</string>
+    <string name="longitude">", Longitude: "</string>
+    <string name="dismiss">DISMISS</string>
+    <string name="settings">SETTINGS</string>
+    <string name="permission_denied_enable_it_from_settings">Permission denied. Enable it from settings.</string>
+    <string name="location_determined">Location Determined</string>
+    <string name="please_select_an_image">Please select an image</string>
+    <string name="location_not_determined">Location not determined</string>
+    <string name="error_retrieving_location">Error retrieving location</string>
 
     <string-array name="Moevideo_descriptions">
         <item>Pewdieoie</item>

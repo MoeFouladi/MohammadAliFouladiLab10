@@ -91,20 +91,7 @@ public class M4f extends Fragment {
                 adClickCounter++;
                 Toast.makeText(getContext(), getString(R.string.mohammadali_fouladi) + adClickCounter, Toast.LENGTH_LONG).show();
             }
-            @Override
-            public void onAdFailedToLoad(@NonNull LoadAdError adError) {
-                Toast.makeText(getContext(), "Ad failed to load: " + adError.getMessage(), Toast.LENGTH_LONG).show();
-            }
 
-            @Override
-            public void onAdLoaded() {
-                Toast.makeText(getContext(), "Ad loaded successfully", Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onAdImpression() {
-                Toast.makeText(getContext(), "Ad impression recorded", Toast.LENGTH_SHORT).show();
-            }
         });
 
         locationButton.setOnClickListener(v -> {
@@ -133,10 +120,10 @@ public class M4f extends Fragment {
                         showLocationNotification(location.getLatitude(), location.getLongitude());
                         showLocationSnackbar(location);
                     } else {
-                        showSnackbar("Location not determined", Snackbar.LENGTH_INDEFINITE);
+                        showSnackbar(getString(R.string.location_not_determined), Snackbar.LENGTH_INDEFINITE);
                     }
                 })
-                .addOnFailureListener(e -> showSnackbar("Error retrieving location", Snackbar.LENGTH_INDEFINITE));
+                .addOnFailureListener(e -> showSnackbar(getString(R.string.error_retrieving_location), Snackbar.LENGTH_INDEFINITE));
     }
 
     private void showLocationSnackbar(Location location) {
@@ -144,8 +131,8 @@ public class M4f extends Fragment {
         bottomNavigationView.setVisibility(View.GONE);
         hideSystemUI();
 
-        Snackbar snackbar = Snackbar.make(getView(), "Latitude: " + location.getLatitude() + ", Longitude: " + location.getLongitude(), Snackbar.LENGTH_INDEFINITE);
-        snackbar.setAction("DISMISS", v -> {
+        Snackbar snackbar = Snackbar.make(getView(), getString(R.string.latitude) + location.getLatitude() + getString(R.string.longitude) + location.getLongitude(), Snackbar.LENGTH_INDEFINITE);
+        snackbar.setAction(R.string.dismiss, v -> {
             showSystemUI();
             bottomNavigationView.setVisibility(View.VISIBLE);
             snackbar.dismiss();
@@ -160,7 +147,7 @@ public class M4f extends Fragment {
         hideSystemUI();
 
         Snackbar snackbar = Snackbar.make(getView(), message, duration);
-        snackbar.setAction("DISMISS", v -> {
+        snackbar.setAction(R.string.dismiss, v -> {
             showSystemUI();
             bottomNavigationView.setVisibility(View.VISIBLE);
             snackbar.dismiss();
@@ -174,8 +161,8 @@ public class M4f extends Fragment {
         bottomNavigationView.setVisibility(View.GONE);
         hideSystemUI();
 
-        Snackbar snackbar = Snackbar.make(getView(), "Permission denied. Enable it from settings.", Snackbar.LENGTH_INDEFINITE);
-        snackbar.setAction("SETTINGS", v -> {
+        Snackbar snackbar = Snackbar.make(getView(), R.string.permission_denied_enable_it_from_settings, Snackbar.LENGTH_INDEFINITE);
+        snackbar.setAction(R.string.settings, v -> {
             showSystemUI();
             bottomNavigationView.setVisibility(View.VISIBLE);
             Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
@@ -208,8 +195,8 @@ public class M4f extends Fragment {
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(getContext(), CHANNEL_ID)
                 .setSmallIcon(R.drawable.ic_location)
-                .setContentTitle("Location Determined")
-                .setContentText("Latitude: " + latitude + ", Longitude: " + longitude)
+                .setContentTitle(getString(R.string.location_determined))
+                .setContentText(getString(R.string.latitude) + latitude + ", "+ getString(R.string.longitude) + longitude)
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                 .setContentIntent(pendingIntent)
                 .setAutoCancel(true)
